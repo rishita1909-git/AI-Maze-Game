@@ -1,0 +1,7 @@
+Difficulty,BFS Steps,BFS Search Time (seconds),Q-Learning Steps,Q-Learning Path Time (seconds),Training Success Rate (%)
+Medium,140,0.0007492000004276633,140,0.0002175999979954213,91.61
+2026-10-18 16:00:01,Medium,60,0.000485,60,0.000271,96.95
+2026-10-18 16:01:20,Medium,100,0.000194,100,0.000171,93.8
+2026-10-18 16:01:25,Easy,24,0.000232,24,0.000293,96.56
+2026-10-18 16:01:44,Medium,,,,,0
+2026-10-18 16:01:50,Medium,,,,,0
