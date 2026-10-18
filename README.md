@@ -1,32 +1,41 @@
-# AI Maze Game Using BFS and Q-Learning
+# 🧩 AI Maze Game Using BFS and Q-Learning
 
-## 1. Project Overview
-The AI Maze Game is a Python-based game that demonstrates how Artificial Intelligence algorithms solve mazes. It compares Breadth-First Search (BFS), a traditional search algorithm, with Q-Learning, a reinforcement learning technique.
+An interactive Python-based AI Maze Game that demonstrates how traditional search algorithms and reinforcement learning can solve maze problems.
 
-## 2. Features
-- Random maze generation
-- Three difficulty levels: Easy, Medium, and Hard
-- Manual player movement
-- BFS shortest-path solving
-- Q-Learning agent training
-- Automatic path animation
-- Algorithm performance comparison
-- CSV results logging
-- Graphs for path length, execution time, and training success rate
+## 📌 Project Overview
 
-## 3. Technologies Used
+The AI Maze Game allows users to explore randomly generated mazes and compare two AI approaches: Breadth-First Search (BFS) and Q-Learning. It includes multiple difficulty levels, path visualization, agent training, and performance comparison.
+
+## ✨ Features
+
+- 🎮 Interactive maze game with manual player movement
+- 🟢 Three difficulty levels: Easy, Medium, and Hard
+- 🔍 BFS algorithm for finding the shortest path
+- 🤖 Q-Learning agent training using rewards
+- 🛣️ Path visualization and automatic movement
+- 📊 Performance comparison graphs
+- 📁 CSV file for saving algorithm results
+- 🔄 Maze reset and replay functionality
+
+## 🛠️ Technologies Used
+
 - Python
 - Pygame
+- NumPy
 - Matplotlib
-- CSV
-- Q-Learning and BFS algorithms
+- Breadth-First Search (BFS)
+- Reinforcement Learning (Q-Learning)
 
-## 4. Project Structure
+## 📂 Project Structure
+
 ```text
 AI_Maze_Game/
 ├── main.py
 ├── comparison.py
+├── requirements.txt
+├── README.md
 ├── maze_results.csv
+├── data/
 └── game/
     ├── __init__.py
     ├── maze.py
@@ -34,36 +43,105 @@ AI_Maze_Game/
     └── q_learning.py
 ```
 
-## 5. How to Run
-1. Install Python.
-2. Open the project folder in VS Code.
-3. Activate the virtual environment.
-4. Install the required libraries:
-   `pip install pygame matplotlib numpy`
-5. Run the game:
-   `python main.py`
+## ⚙️ Installation and Setup
 
-## 6. Controls
-- `1` — Easy difficulty
-- `2` — Medium difficulty
-- `3` — Hard difficulty
-- Arrow keys — Move the player
-- `B` — Find the BFS path
-- `T` — Train the Q-Learning agent
-- `L` — Display the learned path
-- `A` — Animate the current path
-- `G` — Display the reward graph
-- `P` — Compare algorithms and save results
-- `R` — Reset the maze
-- `Esc` — Exit the game
+### 1. Clone the repository
 
-## 7. Algorithms
-**Breadth-First Search (BFS):** Explores the maze level by level and finds a shortest path in an unweighted maze when a path exists.
+```bash
+git clone https://github.com/rishita1909-git/AI-Maze-Game.git
+cd AI-Maze-Game
+```
 
-**Q-Learning:** Learns actions through rewards and penalties to find a route from the starting point to the goal.
+### 2. Create a virtual environment
 
-## 8. Results
-The project records difficulty level, path length, search time, and Q-Learning training success rate in a CSV file. Graphs help compare the algorithms.
+```bash
+python -m venv .venv
+```
 
-## 9. Conclusion
-This project demonstrates the difference between traditional search and reinforcement learning through an interactive maze game. It provides a practical introduction to AI problem-solving and algorithm evaluation.
+### 3. Activate the environment
+
+**Windows PowerShell:**
+
+```powershell
+.\.venv\Scripts\Activate.ps1
+```
+
+### 4. Install dependencies
+
+```bash
+pip install -r requirements.txt
+```
+
+### 5. Run the game
+
+```bash
+python main.py
+```
+
+## 🎮 Game Controls
+
+| Key | Action |
+|---|---|
+| `1` | Easy mode |
+| `2` | Medium mode |
+| `3` | Hard mode |
+| Arrow keys | Move player |
+| `B` | Find BFS path |
+| `T` | Train Q-Learning agent |
+| `L` | Display learned path |
+| `A` | Animate current path |
+| `G` | Display reward graph |
+| `P` | Compare algorithms and save results |
+| `R` | Reset maze |
+| `Esc` | Exit game |
+
+## 🧠 Algorithms Explained
+
+### 1. Breadth-First Search (BFS)
+
+BFS explores the maze level by level. In an unweighted maze, it finds a shortest path when the goal is reachable.
+
+### 2. Q-Learning
+
+Q-Learning is a reinforcement learning algorithm. The agent learns which actions are useful by receiving rewards and penalties while exploring the maze.
+
+## 📊 Performance Evaluation
+
+The project compares the algorithms using:
+
+- Path length: Number of steps needed to reach the goal
+- Search time: Time taken to calculate a path
+- Training success rate: Percentage of training episodes that successfully reach the goal, according to the implementation
+
+The comparison results are saved in `maze_results.csv`, and graphs help visualize performance.
+
+## 🖼️ Screenshots
+
+Add screenshots of the running game, solved maze, and comparison graphs here.
+
+For example, save your images in a `screenshots/` folder and insert them using:
+
+```markdown
+![Maze Game](screenshots/maze-game.png)
+![Algorithm Comparison](screenshots/comparison.png)
+```
+
+## 🚀 Future Improvements
+
+- Develop a graphical dashboard for performance analysis
+- Improve Q-Learning training efficiency
+- Add more maze-generation algorithms
+- Support additional AI search algorithms
+- Enhance the user interface
+
+## 👩‍💻 Author
+
+**Rishita Chaturvedi**
+
+B.Tech — Computer Engineering
+
+GitHub: [rishita1909-git](https://github.com/rishita1909-git)
+
+## 📄 License
+
+This project is available for educational and learning purposes. Add a formal open-source license if you want others to reuse or distribute the code under specific terms.
