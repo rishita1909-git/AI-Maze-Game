@@ -109,22 +109,23 @@ Q-Learning is a reinforcement learning algorithm. The agent learns which actions
 
 The project compares the algorithms using:
 
-- Path length: Number of steps needed to reach the goal
-- Search time: Time taken to calculate a path
-- Training success rate: Percentage of training episodes that successfully reach the goal, according to the implementation
+- **Path length:** Number of steps needed to reach the goal
+- **Search time:** Time taken to calculate a path
+- **Training success rate:** Percentage of training episodes that reach the goal, according to the implementation
 
 The comparison results are saved in `maze_results.csv`, and graphs help visualize performance.
 
 ## 🖼️ Screenshots
 
-Add screenshots of the running game, solved maze, and comparison graphs here.
+Add your actual screenshots to a folder named `screenshots/`.
 
-For example, save your images in a `screenshots/` folder and insert them using:
+### Maze Game
 
-```markdown
-![Maze Game](screenshots/maze-game.png)
+![AI Maze Game](screenshots/maze-game.png)
+
+### Algorithm Comparison
+
 ![Algorithm Comparison](screenshots/comparison.png)
-```
 
 ## 🚀 Future Improvements
 
@@ -144,4 +145,4 @@ GitHub: [rishita1909-git](https://github.com/rishita1909-git)
 
 ## 📄 License
 
-This project is available for educational and learning purposes. Add a formal open-source license if you want others to reuse or distribute the code under specific terms.
+This project is intended for educational and learning purposes. Add an open-source license file if you want to specify how others may use or distribute the code.
